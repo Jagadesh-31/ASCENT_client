@@ -42,51 +42,59 @@ if (login_btn) {
 if (login) {
     login.addEventListener("click", () => {
         console.log('Login button clicked');
-        let loginfetchurl = `http://localhost:3333/user/findUser/${username.value}`;
-        fetch(loginfetchurl, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then((res) => res.json())
-        .then((user) => {
-            console.log(user);
-            if (username.value === user.username && email.value === user.email && password.value === user.password) {
-                window.location.href = "home.html";
-            } else {
-                alert("Invalid credentials");
-            }
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            alert("An error occurred during login");
-        });
+        if (username && email && password) {
+            let loginfetchurl = `http://localhost:3333/user/findUser/${username.value}`;
+            fetch(loginfetchurl, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then((res) => res.json())
+            .then((user) => {
+                console.log(user);
+                if (username.value === user.username && email.value === user.email && password.value === user.password) {
+                    window.location.href = "home.html";
+                } else {
+                    alert("Invalid credentials");
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert("An error occurred during login");
+            });
+        } else {
+            console.error('Username, email, or password element is not found in the DOM');
+        }
     });
 }
 
 if (signup) {
     signup.addEventListener("click", () => {
         console.log('Sign up button clicked');
-        fetch("http://localhost:3333/user/addUser", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                username: username.value,
-                email: email.value,
-                password: confirm_password.value
+        if (username && email && confirm_password) {
+            fetch("http://localhost:3333/user/addUser", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: username.value,
+                    email: email.value,
+                    password: confirm_password.value
+                })
             })
-        })
-        .then(() => {
-            console.log("Signup successful");
-            window.location.href = "home.html";
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            alert("An error occurred during signup");
-        });
+            .then(() => {
+                console.log("Signup successful");
+                window.location.href = "home.html";
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert("An error occurred during signup");
+            });
+        } else {
+            console.error('Username, email, or confirm_password element is not found in the DOM');
+        }
     });
 }
 
@@ -170,15 +178,17 @@ showres.addEventListener("click", () => {
 });
 
 // Next Question functionality
-next.addEventListener("click", () => {
-    if (question_no < total_questions - 1) {
-        question_no++;
-        selectedOption = null; // Reset selected option
-        loadQuestion();
-    } else {
-        alert("Quiz completed!");
-    }
-});
+if (next) {
+    next.addEventListener("click", () => {
+        if (question_no < total_questions - 1) {
+            question_no++;
+            selectedOption = null; // Reset selected option
+            loadQuestion();
+        } else {
+            alert("Quiz completed!");
+        }
+    });
+}
 
 // Fetch questions from JSON file
 async function fetchQuestions() {
