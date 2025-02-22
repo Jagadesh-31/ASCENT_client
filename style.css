@@ -6,14 +6,14 @@
 }
 
 body{
-    background-image:url(./assets/back2.png);
+    background-image:url(back2.png);
     background-size:cover;
     position:relative;
     z-index:1;
 }
 
 main{
-    background-image:url(./assets/back1.png);
+    background-image:url(back1.png);
     background-blend-mode: difference;
     background-size:cover;
     height:100vh;
