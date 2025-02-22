@@ -44,7 +44,7 @@ if (login_btn) {
 if (login) {
     login.addEventListener("click", () => {
         console.log('Login button clicked');
-        let loginfetchurl = "http://localhost:3333/user/findUser/"+name.value;
+        let loginfetchurl = "https://ascent-client.onrender.com/user/findUser/"+name.value;
         fetch(loginfetchurl, {
             method: "GET",
             headers: {
@@ -74,7 +74,7 @@ if (login) {
 if (signup) {
     signup.addEventListener("click", () => {
         console.log('Sign up button clicked');
-        fetch("http://localhost:3333/user/addUser", {
+        fetch("https://ascent-client.onrender.com/user/addUser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -104,7 +104,7 @@ let selectedOption = null;
 
 // Fetch and display profile name
 const profileName = document.querySelector(".profilename");
-const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")); // Fetch from localStorage
+
 if (loggedInUser) {
     profileName.textContent = loggedInUser.username; // Update profile name
 }
