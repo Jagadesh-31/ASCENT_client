@@ -154,28 +154,30 @@ options.forEach((option) => {
 });
 
 // Show Results functionality
-showres.addEventListener("click", () => {
-    if (!selectedOption) {
-        alert("Please select an option first!");
-        return;
-    }
-
-    const currentQuestion = questions[question_no];
-    const correctOption = currentQuestion.correct_option;
-
-    if (!correctOption) {
-        console.error('Correct option is not defined for the current question');
-        return;
-    }
-
-    options.forEach((option) => {
-        if (option.textContent === correctOption) {
-            option.classList.add("correct"); // Highlight correct answer
-        } else if (option === selectedOption && option.textContent !== correctOption) {
-            option.classList.add("incorrect"); // Highlight incorrect selected answer
+if (showres) {
+    showres.addEventListener("click", () => {
+        if (!selectedOption) {
+            alert("Please select an option first!");
+            return;
         }
+
+        const currentQuestion = questions[question_no];
+        const correctOption = currentQuestion.correct_option;
+
+        if (!correctOption) {
+            console.error('Correct option is not defined for the current question');
+            return;
+        }
+
+        options.forEach((option) => {
+            if (option.textContent === correctOption) {
+                option.classList.add("correct"); // Highlight correct answer
+            } else if (option === selectedOption && option.textContent !== correctOption) {
+                option.classList.add("incorrect"); // Highlight incorrect selected answer
+            }
+        });
     });
-});
+}
 
 // Next Question functionality
 if (next) {
