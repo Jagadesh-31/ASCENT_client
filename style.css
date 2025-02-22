@@ -1,0 +1,145 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+
+}
+
+body{
+    background-image:url(./assets/back2.png);
+    background-size:cover;
+    position:relative;
+    z-index:1;
+}
+
+main{
+    background-image:url(./assets/back1.png);
+    background-blend-mode: difference;
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:center;
+    position:relative;
+    z-index:2;
+    
+
+}
+
+nav{
+    color:white;
+    width:100vw;
+    height:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Zurich W01 Extended";
+    padding-top: 25px;
+}
+
+.inside{
+height:80vh;
+width:60vw;
+border-radius:20px;
+background-color: rgba(255, 255, 255);
+display: flex;
+margin:30px;
+font-family: "Apercu Regular";
+border:rgba(0, 0, 0,0.5) solid 3px;
+}
+
+.left{
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    
+}
+
+.right{
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+button{
+    background-color:#C0FF00;
+    color:#282828;
+    width:70%;
+    height:8%;
+    border:none;
+    font-size: larger;
+    font-weight: 570;
+}
+
+h3{
+    color:#282828;
+    font-size: large;
+    font-weight: 650;
+}
+
+input{
+    width:80%;
+    height:8%;
+    background-color: #F5F0FE;
+    border:none;
+    padding-left:5px;
+}
+
+
+nav a{
+    text-decoration-line: none;
+    color:#282828;
+    font-weight: 600;
+    font-size:larger;
+}
+
+.logo{
+font-weight:900;
+width:30vw;
+color:#282828;
+font-size:xx-large;
+}
+
+h6{
+    font-weight:500;
+    font-size:medium;
+    color: #282828;
+}
+
+input:focus{
+ outline:none;
+}
+
+nav a:hover{
+    border-bottom:solid 3px #ffffff;
+}
+
+span{
+    color:white;
+}
+
+.logo:hover{
+    color:black;
+}
+
+span:hover{
+    color:#282828;
+}
+
+a{
+    text-decoration-line: none;}
+
+
+    input:focus {
+        outline: none;
+        border-color: rgba(38, 191, 71, 1);
+        box-shadow: 0px 0px 10px rgba(38, 191, 71, 1);
+    }

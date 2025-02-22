@@ -1,0 +1,442 @@
+[
+  {
+    "question_no": "1",
+    "question": "You receive an email claiming to be from your bank, asking you to click a link to verify your account. What should you do?",
+    "options": [
+      "a : Click the link and log in",
+      "b : Forward the email to a friend",
+      "c : Contact your bank directly using their official website or phone number",
+      "d : Ignore the email and delete it"
+    ],
+    "correct_option": "c : Contact your bank directly using their official website or phone number"
+  },
+  {
+    "question_no": "2",
+    "question": "A text message says youve won a $1,000 gift card and asks for your personal details to claim it. What should you do?",
+    "options": [
+      "a : Provide your details to claim the prize",
+      "b : Ignore the message and delete it",
+      "c : Forward the message to your family",
+      "d : Reply with 'Thank you'"
+    ],
+    "correct_option": "b : Ignore the message and delete it"
+  },
+  {
+    "question_no": "3",
+    "question": "An email claims your PayPal account has been compromised and asks you to reset your password via a link. What should you do?",
+    "options": [
+      "a : Click the link and reset your password",
+      "b : Reply to the email asking for more information",
+      "c : Log in to PayPal directly through their official website",
+      "d : Share the email on social media"
+    ],
+    "correct_option": "c : Log in to PayPal directly through their official website"
+  },
+  {
+    "question_no": "4",
+    "question": "You receive a call from someone claiming to be from the IRS, demanding immediate payment for back taxes. What should you do?",
+    "options": [
+      "a : Pay the amount immediately",
+      "b : Ignore the call and block the number",
+      "c : Provide your credit card details over the phone",
+      "d : Hang up and call the IRS directly using their official number"
+    ],
+    "correct_option": "d : Hang up and call the IRS directly using their official number"
+  },
+  {
+    "question_no": "5",
+    "question": "You see an ad for a designer watch at 90% off on a website you’ve never heard of. What should you do?",
+    "options": [
+      "a : Buy the watch immediately",
+      "b : Research the website for reviews and legitimacy",
+      "c : Share the link with friends",
+      "d : Ignore the ad"
+    ],
+    "correct_option": "b : Research the website for reviews and legitimacy"
+  },
+  {
+    "question_no": "6",
+    "question": "A seller on an online marketplace asks you to pay via a wire transfer instead of the platforms payment system. What should you do?",
+    "options": [
+      "a : Report the seller to the platform",
+      "b : Agree and send the payment",
+      "c : Pay via the platform’s secure payment system",
+      "d : Ignore the seller"
+    ],
+    "correct_option": "a : Report the seller to the platform"
+  },
+  {
+    "question_no": "7",
+    "question": "You receive a package you didn’t order, followed by a call demanding payment. What should you do?",
+    "options": [
+      "a : Pay for the package",
+      "b : Keep the package and ignore the call",
+      "c : Report the incident to the authorities",
+      "d : Return the package to the sender"
+    ],
+    "correct_option": "c : Report the incident to the authorities"
+  },
+  {
+    "question_no": "8",
+    "question": "An online seller offers to sell you concert tickets at a discounted price but asks for payment via gift cards. What should you do?",
+    "options": [
+      "a : Pay with gift cards",
+      "b : Buy the tickets through a legitimate platform",
+      "c : Share the offer with friends",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "b : Buy the tickets through a legitimate platform (or) d : Ignore the offer"
+  },
+  {
+    "question_no": "9",
+    "question": "A pop-up appears on your computer claiming your device is infected with a virus and provides a phone number to call. What should you do?",
+    "options": [
+      "a : Close the pop-up and run a trusted antivirus program",
+      "b : Call the number immediately",
+      "c : Restart your computer",
+      "d : Share the pop-up on social media"
+    ],
+    "correct_option": "a : Close the pop-up and run a trusted antivirus program"
+  },
+  {
+    "question_no": "10",
+    "question": "Someone calls claiming to be from Microsoft and asks for remote access to your computer to fix an issue. What should you do?",
+    "options": [
+      "a : Allow remote access",
+      "b : Hang up and contact Microsoft directly",
+      "c : Provide your credit card details",
+      "d : Ignore the call"
+    ],
+    "correct_option": "b : Hang up and contact Microsoft directly"
+  },
+  {
+    "question_no": "11",
+    "question": "Someone you met online asks for money to visit you but keeps delaying the trip. What should you do?",
+    "options": [
+      "a : Send more money",
+      "b : Ignore the situation",
+      "c : Plan to meet them in person",
+      "d : Stop sending money and report the profile"
+    ],
+    "correct_option": "d : Stop sending money and report the profile"
+  },
+  {
+    "question_no": "12",
+    "question": "A new online romantic interest asks for your bank details to send you money. What should you do?",
+    "options": [
+      "a : Share your bank details",
+      "b : Refuse and block the person",
+      "c : Ask for their bank details instead",
+      "d : Ignore the request"
+    ],
+    "correct_option": "b : Refuse and block the person"
+  },
+  {
+    "question_no": "13",
+    "question": "A company promises guaranteed high returns on an investment with no risk. What should you do?",
+    "options": [
+      "a : Invest immediately",
+      "b : Share the opportunity with friends",
+      "c : Research the company and consult a financial advisor",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "c : Research the company and consult a financial advisor"
+  },
+  {
+    "question_no": "14",
+    "question": "Someone offers you a 'once-in-a-lifetime' investment opportunity in cryptocurrency. What should you do?",
+    "options": [
+      "a : Invest all your savings",
+      "b : Research the opportunity and seek professional advice",
+      "c : Share the offer on social media",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "b : Research the opportunity and seek professional advice"
+  },
+  {
+    "question_no": "15",
+    "question": "You’re offered a job that requires you to pay an upfront fee for training. What should you do?",
+    "options": [
+      "a : Pay the fee",
+      "b : Research the company and verify the job offer",
+      "c : Share the job posting with friends",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "b : Research the company and verify the job offer"
+  },
+  {
+    "question_no": "16",
+    "question": "A recruiter asks for your Social Security number before an interview. What should you do?",
+    "options": [
+      "a : Provide the information",
+      "b : Refuse and report the recruiter",
+      "c : Ask for more details about the job",
+      "d : Ignore the request"
+    ],
+    "correct_option": "b : Refuse and report the recruiter"
+  },
+  {
+    "question_no": "17",
+    "question": "You receive a call saying youve won a lottery but need to pay a fee to claim the prize. What should you do?",
+    "options": [
+      "a : Hang up and report the call",
+      "b : Pay the fee",
+      "c : Ask for more details",
+      "d : Ignore the call"
+    ],
+    "correct_option": "a : Hang up and report the call"
+  },
+  {
+    "question_no": "18",
+    "question": "An email claims youve won a luxury car but asks for your bank details to transfer the prize. What should you do?",
+    "options": [
+      "a : Forward the email to a friend",
+      "b : Provide your bank details",
+      "c : Delete the email and report it",
+      "d : Ignore the email"
+    ],
+    "correct_option": "c : Delete the email and report it"
+  },
+  {
+    "question_no": "19",
+    "question": "A friend messages you on social media asking for money urgently. What should you do?",
+    "options": [
+     "a : Share the message with others",
+     "b : Send the money immediately",
+     "c : Verify the request by calling your friend directly",
+     "d : Ignore the message" 
+    ],
+    "correct_option": "c : Verify the request by calling your friend directly"
+  },
+  {
+    "question_no": "20",
+    "question": "A social media ad offers free products in exchange for your personal information. What should you do?",
+    "options": [
+      "a : Share the ad with friends",
+      "b : Provide your information",
+      "c : Ignore the ad",
+      "d : Report the ad to the platform"
+    ],
+    "correct_option": "c : Ignore the ad"
+  },
+  {
+    "question_no": "21",
+    "question": "You receive a call from someone claiming to represent a charity for disaster relief and asking for an immediate donation. What should you do?",
+    "options": [
+      "a : Donate immediately",
+      "b : Research the charity online before donating",
+      "c : Ignore the call",
+      "d : Share the charitys details on social media"
+    ],
+    "correct_option": "b : Research the charity online before donating"
+  },
+  {
+    "question_no": "22",
+    "question": "A social media post asks for donations to help a sick child, but the link provided seems suspicious. What should you do?",
+    "options": [
+      "a : Donate through the link",
+      "b : Verify the fundraiser through a trusted platform",
+      "c : Share the post with friends",
+      "d : Ignore the post"
+    ],
+    "correct_option": "b : Verify the fundraiser through a trusted platform"
+  },
+  {
+    "question_no": "23",
+    "question": "You find an apartment listing online with photos that look too good to be true, and the landlord asks for a deposit before showing the property. What should you do?",
+    "options": [
+      "a : Visit the property in person before paying anything",
+      "b : Pay the deposit immediately",
+      "c : Share the listing with friends",
+      "d : Ignore the listing"
+    ],
+    "correct_option": "a : Visit the property in person before paying anything"
+  },
+  {
+    "question_no": "24",
+    "question": "A landlord asks for your Social Security number and bank details to process your rental application. What should you do?",
+    "options": [
+      "a : Provide the information",
+      "b : Refuse and report the landlord",
+      "c : Ask for more details about the property",
+      "d : Ignore the request"
+    ],
+    "correct_option": "b : Refuse and report the landlord"
+  },
+  {
+    "question_no": "25",
+    "question": "You receive a message on a messaging app from someone claiming to be a representative of a well-known company. They offer you a part-time job that involves receiving and forwarding packages. They promise high pay for minimal work. What should you do?",
+    "options": [
+      "a : Accept the job offer immediately and provide your address",
+      "b : Ignore the message and block the sender",
+      "c : Share the job offer with friends and family",
+      "d : Research the company and verify the job offer through their official website"
+    ],
+    "correct_option": "d : Research the company and verify the job offer through their official website"
+  },
+  {
+    "question_no": "26",
+    "question": "Someone sends you a check for more than the agreed amount for an item you sold and asks for the difference to be refunded. What should you do?",
+    "options": [
+      "a : Refund the difference",
+      "b : Report the scam and do not cash the check",
+      "c : Cash the check and keep the extra money",
+      "d : Ignore the request"
+    ],
+    "correct_option": "b : Report the scam and do not cash the check"
+  },
+  {
+    "question_no": "27",
+    "question": "You receive a call from someone claiming to be your grandchild, asking for money to help with an emergency. What should you do?",
+    "options": [
+      "a : Send the money immediately",
+      "b : Ignore the call",
+      "c : Verify the callers identity by contacting your grandchild directly",
+      "d : Share the story with family members"
+    ],
+    "correct_option": "c : Verify the callers identity by contacting your grandchild directly"
+  },
+  {
+    "question_no": "28",
+    "question": "An email claims to be from your boss, asking you to purchase gift cards for a client. What should you do?",
+    "options": [
+      "a : Buy the gift cards immediately",
+      "b : Verify the request by contacting your boss directly",
+      "c : Forward the email to coworkers",
+      "d : Ignore the email"
+    ],
+    "correct_option": "b : Verify the request by contacting your boss directly"
+  },
+  {
+    "question_no": "29",
+    "question": "You see a vacation package advertised at an unbelievably low price, but the website asks for full payment upfront. What should you do?",
+    "options": [
+      "a : Book the package immediately",
+      "b : Research the company and read reviews before booking",
+      "c : Share the deal with friends",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "b : Research the company and read reviews before booking"
+  },
+  {
+    "question_no": "30",
+    "question": "A travel agent asks for your passport details and credit card information over email. What should you do?",
+    "options": [
+      "a : Provide the information",
+      "b : Ignore the request",
+      "c : Ask for more details about the trip",
+      "d : Refuse and report the agent"
+    ],
+    "correct_option": "d : Refuse and report the agent"
+  },
+  {
+    "question_no": "31",
+    "question": "You sign up for a free trial, but the company asks for your credit card details. What should you do?",
+    "options": [
+      "a : Read the terms and conditions carefully before signing up",
+      "b : Provide your credit card details",
+      "c : Share the offer with friends",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "a : Read the terms and conditions carefully before signing up"
+  },
+  {
+    "question_no": "32",
+    "question": "You notice unauthorized charges on your credit card from a subscription service you dont remember signing up for. What should you do?",
+    "options": [
+      "a : Ignore the charges",
+      "b : Contact your bank to dispute the charges",
+      "c : Share the issue on social media",
+      "d : Cancel your credit card immediately"
+    ],
+    "correct_option": "b : Contact your bank to dispute the charges"
+  },
+  {
+    "question_no": "33",
+    "question": "A pop-up claims your computer is infected and offers a free scan. What should you do?",
+    "options": [
+      "a : Click the pop-up and run the scan",
+      "b : Close the pop-up and run a trusted antivirus program",
+      "c : Restart your computer",
+      "d : Share the pop-up with friends"
+    ],
+    "correct_option": "b : Close the pop-up and run a trusted antivirus program"
+  },
+  {
+    "question_no": "34",
+    "question": "A website offers a free download of antivirus software but asks for your credit card details. What should you do?",
+    "options": [
+      "a : Provide your credit card details",
+      "b : Ignore the offer",
+      "c : Share the website link with friends",
+      "d : Download the software from a trusted source"
+    ],
+    "correct_option": "d : Download the software from a trusted source"
+  },
+  {
+    "question_no": "35",
+    "question": "You see a QR code on a poster offering a discount at a store. What should you do?",
+    "options": [
+      "a : Scan the QR code immediately",
+      "b : Verify the poster’s legitimacy before scanning",
+      "c : Share the poster on social media",
+      "d : Ignore the poster"
+    ],
+    "correct_option": "b : Verify the posters legitimacy before scanning"
+  },
+  {
+    "question_no": "36",
+    "question": "A QR code sent via email claims to provide a free gift card. What should you do?",
+    "options": [
+      "a : Scan the QR code immediately",
+      "b : Forward the email to friends",
+      "c : Verify the emails legitimacy before scanning",
+      "d : Ignore the email"
+    ],
+    "correct_option": "c : Verify the emails legitimacy before scanning"
+  },
+  {
+    "question_no": "37",
+    "question": "Youre offered a remote job that requires you to purchase equipment upfront. What should you do?",
+    "options": [
+      "a : Purchase the equipment",
+      "b : Research the company and verify the job offer",
+      "c : Share the job posting with friends",
+      "d : Ignore the offer"
+    ],
+    "correct_option": "b : Research the company and verify the job offer"
+  },
+  {
+    "question_no": "38",
+    "question": "A recruiter asks for your bank details to deposit your salary before you start working. What should you do?",
+    "options": [
+      "a : Refuse and report the recruiter",
+      "b : Provide your bank details",
+      "c : Ask for more details about the job",
+      "d : Ignore the request"
+    ],
+    "correct_option": "a : Refuse and report the recruiter"
+   },		
+   {
+    "question_no": "39",
+    "question": "Someone calls claiming to be from your bank and asks for your online banking password. What should you do?",
+    "options": [
+      "a : Provide the password",
+      "b : Hang up and contact your bank directly",
+      "c : Ask for more details about the issue",
+      "d : Ignore the call"
+    ],
+     "correct_option": "b : Hang up and contact your bank directly"
+   },
+   {
+    "question_no": "40",
+    "question": "A stranger on social media asks for your personal details to verify your identity. What should you do?",
+    "options": [
+      "a : Provide the details",
+      "b : Ignore the request",
+      "c : Ask for their details in return",
+      "d : Refuse and block the person"
+    ],
+     "correct_option": "d : Refuse and block the person"
+   }
+]

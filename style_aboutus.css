@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+    overflow-x: hidden;
+
+}
+
+nav{
+    color:white;
+    width:100vw;
+    height:12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Zurich W01 Extended";
+    position:fixed;
+    background-color: #c0ff00;
+}
+
+a{
+    text-decoration-line: none;
+    color:#282828;
+    font-weight: 600;
+    font-size:larger;
+}
+
+.logo{
+font-weight:900;
+width:30vw;
+color:#282828;
+font-size:xx-large;
+}
+
+nav a:hover{
+    border-bottom:solid 3px #ffffff;
+}
+
+span{
+    color:white;
+}
+
+.logo:hover{
+    color:black;
+}
+
+nav span:hover{
+    color:#282828;
+}
+
+main{
+    width:100vw;
+    height: 590px;
+    background-color: #282828;
+    padding-top:12vh;
+}
+
+footer{
+    width:100vw;
+    height:50vh;
+    background-color: #282828;
+    border-top: 1px solid rgb(255, 255, 255);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text{
+    width:100vw;
+    height:215px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Apercu Regular";
+    font-size: xx-large;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.foot{
+    width:220px;
+    height:auto;
+    color:white;
+    text-align:left;
+    font-weight:400;
+    font-size:larger;
+    line-height:35px;
+}
+
+.end{
+    width:100vw;
+    height:40px;
+    text-align:center;
+    color:white;
+    font-family: "Druk Wide Bold";
+    font-size:larger;
+    font-weight:700;
+}
+
+#address,#followus{
+    width:280px;
+}
+
+#high{
+    font-family: "Druk Wide Bold";
+    font-size:large;
+    font-weight:500;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    height:120px;
+    padding-top:20px;
+}
+
+#story{
+    font-family:"villagers";
+    word-spacing: 10px;
+    height:120px;
+    text-align: center;
+    line-height:120px ;
+    overflow: hidden;
+}
+    
+#geeq{
+    font-family: "Zurich W01 Extended";
+
+}
+
+#in{
+    color:#c0ff00;
+}
+
+#in:hover{
+    color:#ffffff;
+}
+
+.sec{
+    height:50vh;
+    width:100vw;
+    background-color:#282828;
+    overflow: hidden;
+    text-align:left;
+    color:white;
+}
+
