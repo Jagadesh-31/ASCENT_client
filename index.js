@@ -146,7 +146,7 @@ options.forEach((option) => {
 });
 
 // Show Results functionality
-if(document.querySelector(".showres"){
+if(document.querySelector(".showres")){
 document.querySelector(".showres").addEventListener("click", () => {
     if (!selectedOption) {
         alert("Please select an option first!");
