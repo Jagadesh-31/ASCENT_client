@@ -146,14 +146,20 @@ options.forEach((option) => {
 });
 
 // Show Results functionality
-if(showres){
 showres.addEventListener("click", () => {
     if (!selectedOption) {
         alert("Please select an option first!");
         return;
-    }})}
+    }
 
-    const correctOption = questions[question_no].correct_option;
+    const currentQuestion = questions[question_no];
+    const correctOption = currentQuestion.correct_option;
+
+    if (!correctOption) {
+        console.error('Correct option is not defined for the current question');
+        return;
+    }
+
     options.forEach((option) => {
         if (option.textContent === correctOption) {
             option.classList.add("correct"); // Highlight correct answer
@@ -161,7 +167,7 @@ showres.addEventListener("click", () => {
             option.classList.add("incorrect"); // Highlight incorrect selected answer
         }
     });
-
+});
 
 // Next Question functionality
 next.addEventListener("click", () => {
