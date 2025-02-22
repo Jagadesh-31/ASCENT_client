@@ -161,7 +161,7 @@ showres.addEventListener("click", () => {
             option.classList.add("incorrect"); // Highlight incorrect selected answer
         }
     });
-});
+
 
 // Next Question functionality
 next.addEventListener("click", () => {
