@@ -151,7 +151,7 @@ document.querySelector(".showres").addEventListener("click", () => {
     if (!selectedOption) {
         alert("Please select an option first!");
         return;
-    }}
+    }})}
 
     const correctOption = questions[question_no].correct_option;
     const options = document.querySelectorAll(".options span");
