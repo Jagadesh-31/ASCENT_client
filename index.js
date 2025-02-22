@@ -146,11 +146,12 @@ options.forEach((option) => {
 });
 
 // Show Results functionality
+if(showres){
 showres.addEventListener("click", () => {
     if (!selectedOption) {
         alert("Please select an option first!");
         return;
-    }
+    }})}
 
     const correctOption = questions[question_no].correct_option;
     options.forEach((option) => {
