@@ -5,7 +5,6 @@ const signup = document.querySelector("#signup");
 const signup_btn = document.querySelector("#signup_btn");
 const login_btn = document.querySelector("#login_btn");
 const username = document.querySelector("#username");
-const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const next = document.querySelector(".next");
@@ -15,7 +14,6 @@ const option1 = document.querySelector(".option1");
 const option2 = document.querySelector(".option2");
 const option3 = document.querySelector(".option3");
 const option4 = document.querySelector(".option4");
-const profilename=document.querySelector(".profilename");
 
 if (confirm_password) {
     confirm_password.addEventListener("input", () => {
@@ -44,22 +42,18 @@ if (login_btn) {
 if (login) {
     login.addEventListener("click", () => {
         console.log('Login button clicked');
-        let loginfetchurl = "https://ascent-client.onrender.com/user/findUser/"+name.value;
+        let loginfetchurl = `http://localhost:3333/user/findUser/${username.value}`;
         fetch(loginfetchurl, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
             }
         })
-        .then((res) => {res.json();
-        console.log(res);})
+        .then((res) => res.json())
         .then((user) => {
             console.log(user);
-            if (name.value === user.username && email.value === user.email && password.value === user.password) {
+            if (username.value === user.username && email.value === user.email && password.value === user.password) {
                 window.location.href = "home.html";
-                profilename.contentText=user.username;
-                localStorage.setItem("loggedInUser", JSON.stringify(user)); // Store in localStorage
-
             } else {
                 alert("Invalid credentials");
             }
@@ -74,7 +68,7 @@ if (login) {
 if (signup) {
     signup.addEventListener("click", () => {
         console.log('Sign up button clicked');
-        fetch("https://ascent-client.onrender.com/user/addUser", {
+        fetch("http://localhost:3333/user/addUser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -88,7 +82,6 @@ if (signup) {
         .then(() => {
             console.log("Signup successful");
             window.location.href = "home.html";
-            profilename.contentText=username.value;
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -101,6 +94,13 @@ let questions = []; // To store fetched questions
 let question_no = 0; // Current question index
 let total_questions = 0;
 let selectedOption = null;
+
+// Fetch and display profile name
+const profileName = document.querySelector(".profilename");
+const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")); // Fetch from localStorage
+if (loggedInUser) {
+    profileName.textContent = loggedInUser.username; // Update profile name
+}
 
 // Update progress bar
 const progressBar = document.querySelector(".progress-bar");
@@ -123,11 +123,11 @@ function resetOptions() {
 // Load and display the current question
 function loadQuestion() {
     const currentQuestion = questions[question_no];
-    document.querySelector(".question").textContent = currentQuestion.question;
-    document.querySelector(".option1").textContent = currentQuestion.options[0];
-    document.querySelector(".option2").textContent = currentQuestion.options[1];
-    document.querySelector(".option3").textContent = currentQuestion.options[2];
-    document.querySelector(".option4").textContent = currentQuestion.options[3];
+    question.textContent = currentQuestion.question;
+    option1.textContent = currentQuestion.options[0];
+    option2.textContent = currentQuestion.options[1];
+    option3.textContent = currentQuestion.options[2];
+    option4.textContent = currentQuestion.options[3];
 
     resetOptions(); // Reset option colors for the new question
     updateProgressBar(); // Update progress bar
@@ -146,16 +146,13 @@ options.forEach((option) => {
 });
 
 // Show Results functionality
-if(document.querySelector(".showres")){
-document.querySelector(".showres").addEventListener("click", () => {
+showres.addEventListener("click", () => {
     if (!selectedOption) {
         alert("Please select an option first!");
         return;
-    }})}
+    }
 
     const correctOption = questions[question_no].correct_option;
-    const options = document.querySelectorAll(".options span");
-
     options.forEach((option) => {
         if (option.textContent === correctOption) {
             option.classList.add("correct"); // Highlight correct answer
@@ -166,7 +163,7 @@ document.querySelector(".showres").addEventListener("click", () => {
 });
 
 // Next Question functionality
-document.querySelector(".next").addEventListener("click", () => {
+next.addEventListener("click", () => {
     if (question_no < total_questions - 1) {
         question_no++;
         selectedOption = null; // Reset selected option
