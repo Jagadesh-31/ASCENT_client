@@ -131,14 +131,18 @@ function resetOptions() {
 // Load and display the current question
 function loadQuestion() {
     const currentQuestion = questions[question_no];
-    question.textContent = currentQuestion.question;
-    option1.textContent = currentQuestion.options[0];
-    option2.textContent = currentQuestion.options[1];
-    option3.textContent = currentQuestion.options[2];
-    option4.textContent = currentQuestion.options[3];
+    if (question && option1 && option2 && option3 && option4) {
+        question.textContent = currentQuestion.question;
+        option1.textContent = currentQuestion.options[0];
+        option2.textContent = currentQuestion.options[1];
+        option3.textContent = currentQuestion.options[2];
+        option4.textContent = currentQuestion.options[3];
 
-    resetOptions(); // Reset option colors for the new question
-    updateProgressBar(); // Update progress bar
+        resetOptions(); // Reset option colors for the new question
+        updateProgressBar(); // Update progress bar
+    } else {
+        console.error('One or more question elements are not found in the DOM');
+    }
 }
 
 // Select Option functionality
